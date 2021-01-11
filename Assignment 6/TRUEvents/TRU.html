@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta charset="utf=8"/>
+<title>Today's Events at the TRU Union</title>
+<script>
+var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Weekend!"];
+var today = new Date();
+var day = today.getDay();
+
+function imageOfDay(){
+var image = new Array();
+image[0] = "Monday.gif"
+image[1] = "Tuesday.gif"
+image[2] = "Wednesday.gif"
+image[3] = "Thursday.gif"
+image[4] = "Friday.gif"
+image[5] = "Weekend.gif"
+
+ for(var i = 0; i <= 5; i++;){
+   if(day == i){
+   document.body.appendChild(image[i]);
+  }
+ }
+}
+
+</head>
+
+<body background="Back01.jpg" text="black">
+imageOfDat();
+</body>
+</html>
